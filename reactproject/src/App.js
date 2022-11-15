@@ -1,8 +1,10 @@
+// 
+
 
 function App() {
   return (
     <div>
-     外联样式
+     创建组件
     </div>
   )
 
