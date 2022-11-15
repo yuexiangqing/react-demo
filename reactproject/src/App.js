@@ -1,10 +1,9 @@
-// 
 
 
 function App() {
   return (
     <div>
-     创建组件
+     向组件传递数据
     </div>
   )
 
