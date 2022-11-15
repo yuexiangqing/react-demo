@@ -1,12 +1,11 @@
-// 
 
 function App() {
   return (
-    <div>
-      循环数据
-    </div>
-    
+  <div>
+    样式处理  
+  </div>
   )
+
 }
 
 export default App;
