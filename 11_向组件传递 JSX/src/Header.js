@@ -13,6 +13,7 @@ class Header extends Component {
             <div>
                 <p>{age}</p>
                 <p>{name}</p>
+                {this.props.children}
             </div>
         )
     }
