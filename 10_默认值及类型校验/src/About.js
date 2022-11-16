@@ -10,8 +10,8 @@ function About ({name, age}){
     )
 }
 About.defaultProps = {
-    name: 'syy',
-    age: 18
+    name: 1,
+    age: '18'
 }
 About.propTypes = {
     name: PropTypes.string,

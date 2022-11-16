@@ -10,8 +10,10 @@ const obj = {
 function App() {
   return (
     <div>
-     <Header {...obj}/>
-     <About {...obj}/>
+     <Header>
+      <p>这是 Header组件中的 P 标签</p>
+     </Header>
+     <About/>
     </div>
   )
 
