@@ -1,9 +1,17 @@
+import About from "./About"
+import Header from "./Header"
 
+
+const obj = {
+  name: 'zce',
+  age: 40
+}
 
 function App() {
   return (
     <div>
-     向组件传递数据
+     <Header {...obj}/>
+     <About {...obj}/>
     </div>
   )
 
