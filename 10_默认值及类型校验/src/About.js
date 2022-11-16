@@ -1,5 +1,5 @@
-import React from 'react'
-import PropTypes from 'prop-types'
+import React from '../../13_组件状态/node_modules/@types/react'
+import PropTypes from '../../13_组件状态/node_modules/@types/prop-types'
 
 function About ({name, age}){
     return (

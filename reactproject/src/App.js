@@ -1,9 +1,11 @@
 
+import Header from "./Header"
 
 function App() {
+  
   return (
     <div>
-      组件状态
+      <Header/>
     </div>
   )
 

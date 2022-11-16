@@ -1,4 +1,4 @@
-import React, {Component} from "react"
+import React, {Component} from "../../13_组件状态/node_modules/@types/react"
 
 class Header extends Component {
    static defaultProps = {
