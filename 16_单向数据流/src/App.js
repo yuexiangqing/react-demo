@@ -1,5 +1,5 @@
 import C1 from "./C1"
-import React, { Component } from 'react'
+import React, { Component } from '../../18_受控表单之单选框/node_modules/@types/react'
 
 // 01 何为单向数据流动
 // 单向数据流的设计原则要求我们将不同组件之间需要共享的数据都定义在上层

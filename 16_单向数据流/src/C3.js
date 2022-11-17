@@ -1,4 +1,4 @@
-import React from 'react'
+import React from '../../18_受控表单之单选框/node_modules/@types/react'
 
 function C3 (props) {
     console.log(props)
