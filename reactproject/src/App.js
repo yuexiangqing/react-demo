@@ -1,17 +1,15 @@
-// 01 何为单向数据流动
+import React, { Component } from 'react'
 
-// 02 单向数据流动如何修改
+class App extends Component{
 
-// 03 特点
 
-function App() {
-  
-  return (
-    <div>
-      单向数据流
-    </div>
-  )
-
+  render(){
+    return (
+      <div>
+        表单使用
+      </div>
+    )
+  }
 }
 
 export default App
