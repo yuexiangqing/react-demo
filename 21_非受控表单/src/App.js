@@ -1,11 +1,12 @@
 import React, { Component } from 'react'
+import FromComponent from './Form'
 
 class App extends Component{
 
   render(){
     return (
       <div>
-        学生管理系统
+        <FromComponent/>
       </div>
     )
   }
