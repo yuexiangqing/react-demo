@@ -1,4 +1,4 @@
-import React, { Component } from 'react'
+import React, { Component } from '../../20_受控表单之复选框/node_modules/@types/react'
 
 class App extends Component{
   // 定义状态
