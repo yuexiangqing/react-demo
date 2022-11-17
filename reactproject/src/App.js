@@ -1,11 +1,14 @@
+// 01 何为单向数据流动
 
-import Header from "./Header"
+// 02 单向数据流动如何修改
+
+// 03 特点
 
 function App() {
   
   return (
     <div>
-      <Header/>
+      单向数据流
     </div>
   )
 

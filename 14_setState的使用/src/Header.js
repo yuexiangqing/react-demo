@@ -1,4 +1,4 @@
-import React, {Component } from 'react'
+import React, {Component } from '../../15_组件中的 this/node_modules/@types/react'
 
 // 1. setState 是异步函数，如果想使用 state 里面的数据会有问题
 // 那么可以使用 async await 来解决 setState 异步执行的问题
