@@ -13,7 +13,7 @@ state = {
 // 定义一个方法处理 studentList 状态
 addList = (student, callback) => {
   this.setState({
-    studentList: [this.state.studentList, student]
+    studentList: [...this.state.studentList, student]
   }, () =>{
     callback()
     console.log(this.state.studentList)
@@ -24,7 +24,7 @@ addList = (student, callback) => {
       <div className={'container'}>
         <StudentTitle/>
         <AddStudent addList={this.addList}/>
-        <StudentList/>
+        <StudentList studentList={this.state.studentList}/>
       </div>
     )
   }
