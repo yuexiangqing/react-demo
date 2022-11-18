@@ -1,30 +1,65 @@
 import React, { Component } from 'react'
 
 class AddStudent extends Component{
+
+    constructor(){
+        super()
+        this.stateHandler = this.stateHandler.bind(this)
+    }
+
+    // 1 定义组件中的状态
+    state = {
+        number: '',
+         name: '',
+         sex: '女',
+         age: '',
+         college: '大前端'
+    }
+
+    stateHandler(e) {
+    // 获取我们当前输入的值，然后调用 setState 更新在具体的属性身上
+    // 可以给第二个参数，打印操作
+      const value = e.target.value
+      const prop = e.target.name
+
+      this.setState({
+        [prop]: value
+      }, ()=>{
+        console.log(this.state.college)
+      })
+    }
+
     render() {
         return(
             <div className="col-md-5">
             <form>
                 <div className="form-group">
                     <label>学号</label>
-                    <input type="number" className="form-control" placeholder="请输入学号" />
+                    <input name = {'number'}
+                    // value={this.state.number} onChange={this.stateHandler.bind(this)} 因为反复要用，可以提取到前面去设置 constructor
+                    value={this.state.number} onChange={this.stateHandler}
+                    type="number" className="form-control" placeholder="请输入学号" />
                 </div>
                 <div className="form-group">
                     <label>姓名</label>
-                    <input type="text" className="form-control" placeholder="请输入姓名"/>
+                    <input name={'name'} value={this.state.name} onChange={this.stateHandler}
+                    type="text" className="form-control" placeholder="请输入姓名"/>
                 </div>
                 <div className="form-group">
                     <label>性别&nbsp;&nbsp;</label>
                     <label className="checkbox-inline">
-                        <input type="radio" value="男" /> 男
+                        <input name="sex" onChange={this.stateHandler} defaultChecked={this.state.sex === '男'}
+                        type="radio" value="男" /> 男
                     </label>
                     <label className="checkbox-inline">
-                        <input type="radio" value="女"/> 女
+                        <input name="sex" onChange={this.stateHandler} defaultChecked={this.state.sex === '女'}
+                        type="radio" value="女"/> 女
                     </label>
                 </div>
                 <div className="form-group">
                     <label>年龄</label>
-                    <input type="text" className="form-control" placeholder="请输入姓名"/>
+                    <input name={'age'} value={this.state.age} onChange={this.stateHandler}
+                    type="text" className="form-control" placeholder="请输入年龄"/>
                 </div>
                 <div className="form-group">
                     <label>入学时间</label>
@@ -50,7 +85,7 @@ class AddStudent extends Component{
                 </div>
                 <div className="form-group">
                     <label>所属学院</label>
-                    <select className="form-control">
+                    <select name={'college'} value={this.state.college} className="form-control" onChange={this.stateHandler}>
                         <option value="大前端">大前端</option>
                         <option value="Java">Java</option>
                         <option value="python">python</option>
