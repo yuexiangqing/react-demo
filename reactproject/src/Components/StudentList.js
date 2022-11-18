@@ -1,6 +1,12 @@
 import React, { Component } from 'react'
 
 class StudentList extends Component{
+    rmStudent = (index, ev) =>{
+        ev.preventDefault()
+        if(window.confirm('是否确定删除当前项')){
+            this.props.removeStudent(index)
+        }
+    }
     render() {
         const {studentList} = this.props
         console.log(studentList, 222)
@@ -37,7 +43,7 @@ class StudentList extends Component{
                             </td>
                             <td>{student.college}</td>
                             <td>
-                                <a href="#">删除</a>
+                                <a href="#" onClick={(ev) => {this.rmStudent(`${student.number}`,ev)}}>删除</a>
                                 <a href="#">修改</a>
                             </td>
                         </tr>   
