@@ -65,6 +65,12 @@ removeStudent = (number) => {
     console.log(this.state.studentList);
   })
 
+  // 3.利用上述的 index 将目标想从数组中移除
+  this.setState({
+    studentList: studentList
+  }, () => {
+    console.log(this.state.studentList)
+  })
 
 }
 
