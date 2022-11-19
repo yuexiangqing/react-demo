@@ -2,9 +2,12 @@ import React, { Component } from 'react'
 
 class App extends Component{
 
-  // 更新组件：当数据发生变化时，组件需要被重新渲染
-  // 常用方法：
- 
+  // 挂载组件：组件被创建，插入到 DOM 当中
+  // 生命周期方法：
+  // 1.constructor 设置组件的初始配置：定义一些函数的 this 指向 / 状态的定义
+  // 2.render 渲染组件时需要调用： 解析 JSX ，把非真实的DOM 渲染到界面上
+  // 3.componentDidMount： 当组件挂载完成之后执行的一些操作
+  // 发送网络请求、添加定时器、给元素添加事件监听、获取 DOM 元素
   
   constructor(){
     super()
@@ -18,6 +21,7 @@ class App extends Component{
     console.log(this)
   }
 
+  
   render(){
     console.log('render执行了')
     return (
