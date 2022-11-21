@@ -1,4 +1,4 @@
-import React, { Component } from 'react'
+import React, { Component } from '../../28_创建 store 及 reducer/node_modules/@types/react'
 
 // 1.为什么需要 Redux 
 // 在react中是单向数据流，传递数据的时候需要从上层组件往下传，有优势：利于管理和排错
