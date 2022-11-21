@@ -1,4 +1,4 @@
-import React, { Component, PureComponent } from 'react'
+import React, { Component, PureComponent } from '../../reactproject/node_modules/@types/react'
 class About extends PureComponent{
     constructor(){
         super()
