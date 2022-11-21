@@ -1,15 +1,12 @@
 import React, { Component } from 'react'
-// import axios from 'axios'
-
-// 
-
 
 class App extends Component{
 
-  render(){
+
+render(){
     return (
       <div>
-       mock 数据
+       Redux 工作流程
       </div>
     )
   }
