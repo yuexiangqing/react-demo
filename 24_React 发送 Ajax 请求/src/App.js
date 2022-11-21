@@ -1,5 +1,5 @@
-import React, { Component } from 'react'
-import axios from 'axios'
+import React, { Component } from '../../25_React请求转发/node_modules/@types/react'
+import axios from '../../25_React请求转发/node_modules/axios'
 
 class App extends Component{
   
