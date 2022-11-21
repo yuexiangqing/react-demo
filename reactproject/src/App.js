@@ -1,12 +1,14 @@
 import React, { Component } from 'react'
 
+
+
 class App extends Component{
 
 
 render(){
     return (
       <div>
-       Redux 工作流程
+       创建 store 及 reducer
       </div>
     )
   }
